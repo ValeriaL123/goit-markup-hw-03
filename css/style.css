@@ -81,6 +81,7 @@ img{
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  outline: 2px solid yellow;
 }
 
 .header .container{
@@ -156,10 +157,11 @@ padding-bottom: 32px;
   color: var(--accent-color);
 }
 
-/* Герой */
+/* ГЕРОЙ */
 .hero {
   background-color: var(--bg-color-hero-footer);
 }
+
 
 .hero-title {
   font-weight: 900;
@@ -169,9 +171,24 @@ padding-bottom: 32px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  padding-bottom: 30px ;
 }
 
+.container.btn{
+  padding: 200px 252px 200px;
+}
+
+
+
+
+/* КНОПКА - ЗАКАЗАТЬ УСЛУГУ */
+
 .btn.hero{
+ min-width: 200px;
+ padding: 10px 32px;
+ display: flex;
+ margin: 0 auto;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
@@ -181,6 +198,11 @@ padding-bottom: 32px;
   border-radius: 4px;
   border: 0px;
 }
+
+
+
+
+
 
 /* Особенности */
 
