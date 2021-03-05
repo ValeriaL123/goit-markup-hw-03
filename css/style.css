@@ -44,6 +44,7 @@ img{
 }
 
 /* СПРЯТАННЫЕ ЗАГОЛОВКИ */
+
 .visually-hidden { 
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -174,10 +175,9 @@ padding-bottom: 32px;
   padding-bottom: 30px ;
 }
 
-.container.btn{
-  padding: 200px 252px 200px;
+.hero .container{
+  padding: 200px 15px ;
 }
-
 
 
 
@@ -201,10 +201,23 @@ padding-bottom: 32px;
 
 
 
+/* ОСОБЕННОСТИ*/
 
+.list.features{
+  display: flex;
+  align-items: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
+.features.item{
+  display: flex;
+  align-items: center;
+}
 
-/* Особенности */
+.features-item:not(:last-child){
+  margin-right: 30px;
+}
 
 .features-title {
   font-weight: 700;
@@ -215,15 +228,61 @@ padding-bottom: 32px;
   color: var(--title-color);
 }
 
-.features-item {
+.features-text {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
-/* Секция наша команда */
-.description {
+
+/*  СЕКЦИЯ ЧЕМ МЫ ЗАНИМАЕМСЯ */
+
+.section .container{
+  padding-bottom: 94px;
+}
+
+.section-title{
+margin-bottom: 50px;
+text-align: center;
+}
+
+.section.list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.section-item{
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+}
+
+/* НАША КОМАНДА  */
+
+
+.description .container{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.list.description{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.description-list-item{
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100%/4-30);
+}
+
+
+.description{
   background-color: #f5f4fa;
 }
 
@@ -242,12 +301,32 @@ padding-bottom: 32px;
   color: var(--secondary-text-color);
 }
 
-/* Футер */
+/* ФУТЕР//////////*/
+
+.footer .container{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.link.logo{
+  margin: 0;
+  padding: 0;
+}
+
+
 .address .address-text {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--secondary-white-color);
+  margin-bottom: 9px;
+  margin-top: 20px;
+}
+
+.contact>.link{
+  display: block;
+}
+a[href="mailto:info@example.com"]{
+  margin-bottom: 9px;
 }
 
 .address .link {

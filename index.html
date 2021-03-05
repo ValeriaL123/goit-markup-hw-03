@@ -50,7 +50,7 @@
 <!-- Блог Герой -->
 
   <section class="hero">
-    <div class="container btn">
+    <div class="container">
 
     <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
 
@@ -67,80 +67,93 @@
 <!-- Oсобенности -->
 
   <section class="features">
-    <h2 class="visually-hidden">Особенности компании</h2>
+    <div class="container">
+
+      <h2 class="visually-hidden">Особенности компании</h2>
 
   <!-- Список особенностей -->
-    <ul class="list" >
-      <li>
+    <ul class="list features" >
+      <li class="features-item">
         <h3 class="features-title">Внимание к деталям</h3>
-        <p class="features-item">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+        <p class="features-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
       </li>
 
-      <li>
+      <li class="features-item">
         <h3 class="features-title">Пунктуальность</h3>
-        <p class="features-item">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+        <p class="features-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
       </li>
 
-      <li>
+      <li class="features-item">
         <h3 class="features-title">Планирование</h3>
-        <p class="features-item">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+        <p class="features-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
       </li>
 
-      <li>
+      <li class="features-item">
         <h3 class="features-title">Современные технологии</h3>
-        <p class="features-item">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+        <p class="features-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
       </li>
     </ul>
+    </div>
+    
   </section>
 
 
 <!-- Секция 2. Чем мы занимаемся -->
-<section>
-  <h2 class="section-title">Чем мы занимаемся</h2>
+<section class="section">
+
+  <div class="container">
+    <h2 class="section-title">Чем мы занимаемся</h2>
       
-          <ul class="list">
+    <ul class="section list">
 
-            <li><img src="./img/typing_comp.png" width="370" alt="Печатать на компьютере"></li>
+      <li class="section-item"><img src="./img/typing_comp.png" width="370" alt="Печатать на компьютере"></li>
 
-            <li><img src="./img/telephone.png" width="370" alt="Телефон и компьютер"></li>
+      <li class="section-item"><img src="./img/telephone.png" width="370" alt="Телефон и компьютер"></li>
 
-            <li><img src="./img/tablet.png" width="370" alt="Планшет"></li>
-          </ul>
+      <li class="section-item"><img src="./img/tablet.png" width="370" alt="Планшет"></li>
+    </ul>
+  </div>
+ 
       
 </section>
 
 <!-- Секция 3. Наша команда -->
 
 <section class="description">
-  <h2 class="section-title">Наша команда
-  </h2>
 
-  <ul class="list">
+  <div class="container">
 
-    <li>
-      <img src="./img/man.jpg" width="270" alt="Дизайнер продукта">
-      <h3 class="description-title">Игорь Демьяненко</h3>
-      <p class="description-text">Product Designer</p>
-    </li>
+    <h2 class="section-title">Наша команда</h2>
+  
+    <ul class="list description">
+  
+      <li class="description-list-item">
+        <img src="./img/man.jpg" width="270" alt="Дизайнер продукта">
+        <h3 class="description-title">Игорь Демьяненко</h3>
+        <p class="description-text">Product Designer</p>
+      </li>
+  
+      <li class="description-list-item">
+        <img src="./img/woman.jpg" width="270" alt="Девушка разработчик">
+        <h3 class="description-title">Ольга Репина</h3>
+        <p class="description-text">Frontend Developer</p>
+      </li>
+  
+      <li class="description-list-item">
+        <img src="./img/frontend_boy.jpg" width="270" alt="Маркетолог">
+        <h3 class="description-title">Николай Тарасов</h3>
+        <p class="description-text">Marketing</p>
+      </li>
+  
+      <li class="description-list-item">
+        <img src="./img/man_with_glasses.jpg" width="270" alt="UI дизайнер">
+        <h3 class="description-title">Михаил Ермаков</h3>
+        <p class="description-text">UI Designer</p>
+      </li>
+    </ul>
 
-    <li>
-      <img src="./img/woman.jpg" width="270" alt="Девушка разработчик">
-      <h3 class="description-title">Ольга Репина</h3>
-      <p class="description-text">Frontend Developer</p>
-    </li>
-
-    <li>
-      <img src="./img/frontend_boy.jpg" width="270" alt="Маркетолог">
-      <h3 class="description-title">Николай Тарасов</h3>
-      <p class="description-text">Marketing</p>
-    </li>
-
-    <li>
-      <img src="./img/man_with_glasses.jpg" width="270" alt="UI дизайнер">
-      <h3 class="description-title">Михаил Ермаков</h3>
-      <p class="description-text">UI Designer</p>
-    </li>
-  </ul>
+  </div>
+  
 
   
 </section>
@@ -149,15 +162,20 @@
 <!-- Футер-->
 
 <footer class="footer">
-  <div>
+  <div class="container" >
 
     <a class="link logo" href="index.html">Web<span class="logo-white">Studio</span> </a>
 
     <address class="address">
+    
     <p class="address-text">г. Киев, пр-т Леси Украинки, 26</p> 
 
-    <a class="link" href="mailto:info@example.com">info@example.com</a>
-    <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
+
+    <div class="contact">
+  <a class="link" href="mailto:info@example.com">info@example.com</a>
+  <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
+    </div>
+    
   </address>
   
   </div>
