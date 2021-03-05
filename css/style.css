@@ -82,7 +82,6 @@ img{
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid yellow;
 }
 
 .header .container{
@@ -119,8 +118,8 @@ padding-bottom: 32px;
   letter-spacing: 0.03em;
   color: var(--accent-color);
   margin-right: 93px;
- padding-top: 24px;
- padding-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo-white {
@@ -210,14 +209,9 @@ padding-bottom: 32px;
   padding-bottom: 94px;
 }
 
-.features.item{
-  display: flex;
-  align-items: center;
-}
 
-.features-item:not(:last-child){
-  margin-right: 30px;
-}
+
+
 
 .features-title {
   font-weight: 700;
@@ -226,6 +220,7 @@ padding-bottom: 32px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-color);
+  margin-bottom: 10px;
 }
 
 .features-text {
@@ -233,6 +228,9 @@ padding-bottom: 32px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+.features-item:not(:last-child){
+  margin-right: 30px;
 }
 
 
@@ -327,6 +325,19 @@ text-align: center;
 }
 a[href="mailto:info@example.com"]{
   margin-bottom: 9px;
+}
+.description-flex{
+  padding-top: 30px;
+  padding-bottom: 30px; 
+  text-align: center;
+}
+.description-flex .description-title{
+  margin-bottom: 10px;
+}
+.description-list-item{
+  background: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 }
 
 .address .link {
