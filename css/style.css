@@ -88,7 +88,7 @@ img{
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  background-color:pink;
+ 
 }
 
 .header .container{
@@ -439,7 +439,7 @@ margin-bottom:34px;
 
 .list-portfolio-item{
   outline: 1px solid green;
-  flex-basis: calc(100% / 3 -30px);
+  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
  
