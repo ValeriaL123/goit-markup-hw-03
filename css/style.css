@@ -82,6 +82,7 @@ img{
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  /* background-color:pink; */
 }
 
 .header .container{
@@ -92,7 +93,13 @@ img{
 .nav{
   display: flex;
   text-align: center;
+  
 }
+
+.navigation-item:not(:last-child){
+  margin-right: 50px;
+}
+
 
 .navigation.list{
 display: flex;
@@ -102,14 +109,17 @@ padding-top: 32px;
 padding-bottom: 32px;
 }
 
-.navigation-item:not(:last-child){
-  margin-right: 50px;
-}
+
 
 .email{
   margin-right: 48px;
 }
-
+/* /////////////  ЛОГОТИП///////////// */
+.nav .link.logo{
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+}
 .logo {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -117,9 +127,6 @@ padding-bottom: 32px;
   line-height: 1.1;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .logo-white {
@@ -229,9 +236,16 @@ padding-bottom: 32px;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-.features-item:not(:last-child){
-  margin-right: 30px;
-}
+
+.list.features{
+  margin-left: -30px;
+    margin-top: -30px;
+  }
+  .features-item{
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+    margin-top: 30px; 
+  }
 
 
 /*  СЕКЦИЯ ЧЕМ МЫ ЗАНИМАЕМСЯ */
@@ -348,7 +362,28 @@ border-radius: 0px 0px 4px 4px;
 }
 
 /* ПОРТФОЛИО */
-/* Меню */
+/* /////////// МЕНЮ*/
+
+.list.filters{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+padding-top: 94px;
+padding-bottom: 34px;
+margin-left: -8px;
+margin-top: -8px;
+}
+
+
+
+.list-filters-item{
+  flex-basis: calc(100%/5 -8px);
+  margin-left: 8px;
+  margin-top: 8px;
+ 
+}
+
+
 
 .menu .btn {
   font-weight: 500;
@@ -360,6 +395,8 @@ border-radius: 0px 0px 4px 4px;
   background-color: #f5f4fa;
   border-radius: 4px;
   border: 0px;
+  min-width: 73px;
+  
 }
 
 .menu .btn:hover,
@@ -369,6 +406,17 @@ border-radius: 0px 0px 4px 4px;
 }
 
 /*  Портфолио */
+
+/* .list.portfolio{
+  margin-left: -30px;
+  margin-top: -30px;
+} */
+
+/* .list-portfolio-item{
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+} */
 
 .portfolio .portfolio-title {
   font-weight: 700;
