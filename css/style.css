@@ -79,17 +79,22 @@ img{
 }
 
 /* ШАПКА */
+
+.header{
+  border: 1px solid #ECECEC;
+}
 .container{
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* background-color:pink; */
+  background-color:pink;
 }
 
 .header .container{
   display: flex;
   align-items: center;
+  
 }
 
 .nav{
@@ -221,7 +226,6 @@ padding-bottom: 32px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-color);
-  margin-bottom: 10px;
 }
 
 .features-text {
@@ -231,25 +235,26 @@ padding-bottom: 32px;
   color: var(--secondary-text-color);
 }
 
+.features-box{
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
 .list.features{
   display: flex;
-  align-items: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  margin-left: -30px;
-  margin-top: -30px;;
 }
- 
-.features>.container{
-  outline: 1px solid red ;
+
+.features-item{
+  flex-basis: calc(100% / 4);
 }
- 
-  .features-item{
-    flex-basis: calc(100% / 4 - 30px);
-    margin-left: 30px;
-    margin-top: 30px; 
-    /* margin-top: 30px;  */
-  }
+
+.features-item:not(:last-child){
+margin-right: 30px;
+}
+.features-title{
+  margin-bottom: 10px;
+}
+
 
 
 /*  СЕКЦИЯ ЧЕМ МЫ ЗАНИМАЕМСЯ */
@@ -380,12 +385,14 @@ border-radius: 0px 0px 4px 4px;
 
 /* ПОРТФОЛИО */
 /* /////////// МЕНЮ*/
-
+.menu-section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .list.filters{
 display: flex;
 justify-content: center;
-padding-top: 94px;
-padding-bottom: 34px;
+margin-bottom:34px;
 
 }
 
@@ -396,7 +403,7 @@ padding-bottom: 34px;
 
 
 /* ///////////КАТЕГОРИИ  */
-.menu .btn {
+.menu-section .btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -410,8 +417,8 @@ padding-bottom: 34px;
   padding: 6px 22px;
 }
 
-.menu .btn:hover,
-.menu .btn:focus {
+.menu-section .btn:hover,
+.menu-section .btn:focus {
   color: #ffffff;
   background-color: var(--accent-color);
 }
@@ -421,29 +428,30 @@ padding-bottom: 34px;
 
 /*  Портфолио сетка */
 
-.list.portfolio{
-  outline: 2px solid red;
+
+.portfolio{
+  outline: 1px solid red;
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
-
 }
 
-.list.portfolio>.list-portfolio-item{
+.list-portfolio-item{
+  outline: 1px solid green;
   flex-basis: calc(100% / 3 -30px);
   margin-left: 30px;
   margin-top: 30px;
-  background: #FFFFFF;
-  border: 1px solid #EEEEEE;
  
+
 }
+
 
 .list-portfolio-card{
-  margin: 20px 24px;
+background: #FFFFFF;
+border: 1px solid #EEEEEE;
+padding: 20px 24px;
 }
-
-
 
 
 .portfolio .portfolio-title {
