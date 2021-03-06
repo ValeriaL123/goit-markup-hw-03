@@ -237,10 +237,12 @@ padding-bottom: 32px;
   color: var(--secondary-text-color);
 }
 
-.list.features{
+/* .list.features{
   margin-left: -30px;
     margin-top: -30px;
-  }
+  } */
+
+ 
   .features-item{
     flex-basis: calc(100% / 4 - 30px);
     margin-left: 30px;
@@ -339,6 +341,9 @@ text-align: center;
 }
 a[href="mailto:info@example.com"]{
   margin-bottom: 9px;
+
+
+  /* ////////////////// */
 }
 .description-flex{
   padding-top: 30px;
@@ -348,8 +353,10 @@ a[href="mailto:info@example.com"]{
 .description-flex .description-title{
   margin-bottom: 10px;
 }
+
+
 .description-list-item{
-  background: #FFFFFF;
+background: #FFFFFF;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 }
@@ -367,45 +374,17 @@ border-radius: 0px 0px 4px 4px;
 .list.filters{
 display: flex;
 justify-content: center;
-flex-wrap: wrap;
 padding-top: 94px;
 padding-bottom: 34px;
-margin-left: -8px;
-margin-top: -8px;
+
+}
+
+.list-filters-item:not(:last-child){
+  margin-right: 8px;
 }
 
 
-
-.list-filters-item{
-  flex-basis: calc(100%/5 -8px);
-  margin-left: 8px;
-  margin-top: 8px;
- 
-}
-
-
-
-.menu .btn {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  border: 0px;
-  min-width: 73px;
-  
-}
-
-.menu .btn:hover,
-.menu .btn:focus {
-  color: #ffffff;
-  background-color: var(--accent-color);
-}
-
-/*  Портфолио */
+/*  Портфолио сетка */
 
 /* .list.portfolio{
   margin-left: -30px;
@@ -417,6 +396,26 @@ margin-top: -8px;
   margin-top: 30px;
   flex-basis: calc(100% / 3 - 30px);
 } */
+.menu .btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  border: 0px;
+  min-width: 73px;
+  padding: 6px 22px;
+}
+
+.menu .btn:hover,
+.menu .btn:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
 
 .portfolio .portfolio-title {
   font-weight: 700;
