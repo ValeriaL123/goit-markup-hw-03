@@ -82,7 +82,7 @@ img{
 /* ШАПКА */
 
 .header{
-  border: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
 }
 .container{
   width: 1200px;
@@ -104,25 +104,36 @@ img{
   text-align: center;
   
 }
+/* ///////////Навигационное меню */
+.link.menu{
+padding-top: 32px;
+padding-bottom: 32px;
 
+
+}
 .navigation-item:not(:last-child){
   margin-right: 50px;
 }
 
-
+/* ////// КОНТАКТЫ  */
 .navigation.list{
 display: flex;
 align-items: center;
-margin-left: auto;
 padding-top: 32px;
 padding-bottom: 32px;
+margin-left: auto;
+
 }
 
 
-
-.email{
-  margin-right: 48px;
+.contact.email{
+  margin-right: 50px;
 }
+
+/* ///////////Навигационное меню  КОНЕЦ */
+
+
+
 /* /////////////  ЛОГОТИП///////////// */
 .nav .link.logo{
   padding-top: 24px;
