@@ -18,6 +18,7 @@ body {
   background-color: var(--bg-color);
   font-family: var(--main-font);
   color: var(--title-color);
+  
 }
 
 /* Сброс стилей */
@@ -42,7 +43,7 @@ ul, ol{
 }
 img{
   display: block;
-  max-width: 100;
+  max-width: 100%;
 }
 
 /* СПРЯТАННЫЕ ЗАГОЛОВКИ */
@@ -107,10 +108,14 @@ img{
 /* ///////////Навигационное меню */
 .link.menu{
 padding-top: 32px;
-padding-bottom: 32px;
+padding-bottom: 32px;}
 
 
-}
+
+
+
+
+
 .navigation-item:not(:last-child){
   margin-right: 50px;
 }
@@ -119,9 +124,13 @@ padding-bottom: 32px;
 .navigation.list{
 display: flex;
 align-items: center;
-padding-top: 32px;
-padding-bottom: 32px;
+
 margin-left: auto;
+
+}
+.link.contact{
+  padding-top: 32px;
+padding-bottom: 32px;
 
 }
 
@@ -198,11 +207,12 @@ margin-left: auto;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  padding-bottom: 30px ;
+  margin-bottom: 30px ;
 }
 
 .hero .container{
   padding: 200px 15px ;
+ 
 }
 
 
@@ -212,8 +222,9 @@ margin-left: auto;
 .btn.hero{
  min-width: 200px;
  padding: 10px 32px;
- display: flex;
+ display: flex; 
  margin: 0 auto;
+ text-align: center;
 
   font-weight: 700;
   font-size: 16px;
@@ -223,6 +234,8 @@ margin-left: auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0px;
+  outline: 0px;
+  
 }
 
 
@@ -272,7 +285,7 @@ margin-right: 30px;
 
 /*  СЕКЦИЯ ЧЕМ МЫ ЗАНИМАЕМСЯ */
 
-.section .container{
+.content{
   padding-bottom: 94px;
 }
 
@@ -297,9 +310,10 @@ text-align: center;
 /* НАША КОМАНДА  */
 
 
-.description .container{
+.description-section{
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: #f5f4fa;
 }
 
  .list.description{
@@ -315,14 +329,11 @@ text-align: center;
   flex-basis: calc(100%/4 - 30px); 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
-padding-bottom: 30px;
-}
-
-
-.description{
-  background-color: #f5f4fa;
 
 }
+
+
+
 
 .description .description-title {
   font-weight: 500;
@@ -349,7 +360,7 @@ padding-bottom: 30px;
   margin: 0;
   padding: 0;
 }
-
+.address{margin-top: 20px;}
 
 .address .address-text {
   font-size: 14px;
@@ -357,22 +368,24 @@ padding-bottom: 30px;
   letter-spacing: 0.03em;
   color: var(--secondary-white-color);
   margin-bottom: 9px;
-  margin-top: 20px;
+  
 }
 
-.contact>.link{
-  display: block;
-}
+
 a[href="mailto:info@example.com"]{
-  margin-bottom: 9px;
+  display: block;
+  display: block;
 
-
-  /* ////////////////// */
 }
+
+ /* ////////////////// */
 .description-flex{
   padding-top: var(--margin-right-bottom);
-  padding-bottom: vae(--margin-right-bottom); 
+  padding-bottom: var(--margin-right-bottom); 
   text-align: center;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .description-flex .description-title{
   margin-bottom: 10px;
@@ -390,6 +403,7 @@ border-radius: 0px 0px 4px 4px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 9px;
 }
 
 
@@ -405,7 +419,7 @@ border-radius: 0px 0px 4px 4px;
 .list.filters{
 display: flex;
 justify-content: center;
-margin-bottom:34px;
+margin-bottom: 50px;
 
 }
 
@@ -460,7 +474,9 @@ margin-bottom:34px;
 
 .list-portfolio-card{
 background: #FFFFFF;
-border: 1px solid #EEEEEE;
+border-left: 1px solid #EEEEEE;
+border-right: 1px solid #EEEEEE;
+border-bottom: 1px solid #EEEEEE;
 padding: 20px 24px;
 }
 
